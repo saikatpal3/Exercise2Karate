@@ -2,9 +2,10 @@
 Feature: Excercise - 2 : API automation using Karate API Test
 
 Background:
+	#* url baseUrl
 	* url 'http://dummy.restapiexample.com/'
 
-########## Get & Delete - Status code to be Successful. ##########
+########## Get - Status code to be Successful. ##########
 Scenario: Verify GET Employees should respond with correct HTTP Status Code
 Given path 'api/v1/employees'
 When method GET
